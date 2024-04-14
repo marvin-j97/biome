@@ -20,6 +20,7 @@ pub mod no_skipped_tests;
 pub mod no_suspicious_semicolon_in_jsx;
 pub mod no_undeclared_dependencies;
 pub mod no_useless_ternary;
+pub mod style_prop;
 pub mod use_import_restrictions;
 pub mod use_jsx_key_in_iterable;
 pub mod use_node_assert_strict;
@@ -47,6 +48,7 @@ declare_group! {
             self :: no_suspicious_semicolon_in_jsx :: NoSuspiciousSemicolonInJsx ,
             self :: no_undeclared_dependencies :: NoUndeclaredDependencies ,
             self :: no_useless_ternary :: NoUselessTernary ,
+            self :: style_prop :: StyleProp ,
             self :: use_import_restrictions :: UseImportRestrictions ,
             self :: use_jsx_key_in_iterable :: UseJsxKeyInIterable ,
             self :: use_node_assert_strict :: UseNodeAssertStrict ,

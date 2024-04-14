@@ -985,6 +985,10 @@ export interface Nursery {
 	 */
 	recommended?: boolean;
 	/**
+	 * Succinct description of the rule.
+	 */
+	styleProp?: RuleConfiguration_for_Null;
+	/**
 	 * Disallows package private imports.
 	 */
 	useImportRestrictions?: RuleConfiguration_for_Null;
@@ -1917,13 +1921,13 @@ export type Category =
 	| "lint/nursery/noConsole"
 	| "lint/nursery/noDoneCallback"
 	| "lint/nursery/noDuplicateElseIf"
+	| "lint/nursery/noDuplicateFontNames"
 	| "lint/nursery/noDuplicateJsonKeys"
 	| "lint/nursery/noDuplicateTestHooks"
 	| "lint/nursery/noEvolvingAny"
 	| "lint/nursery/noExcessiveNestedTestSuites"
 	| "lint/nursery/noExportsInTest"
 	| "lint/nursery/noFocusedTests"
-	| "lint/nursery/noDuplicateFontNames"
 	| "lint/nursery/noMisplacedAssertion"
 	| "lint/nursery/noNamespaceImport"
 	| "lint/nursery/noNodejsModules"
@@ -1934,6 +1938,7 @@ export type Category =
 	| "lint/nursery/noTypeOnlyImportAttributes"
 	| "lint/nursery/noUndeclaredDependencies"
 	| "lint/nursery/noUselessTernary"
+	| "lint/nursery/styleProp"
 	| "lint/nursery/useBiomeSuppressionComment"
 	| "lint/nursery/useImportRestrictions"
 	| "lint/nursery/useJsxKeyInIterable"
